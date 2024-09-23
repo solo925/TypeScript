@@ -1,0 +1,26 @@
+{
+  "name": "typescript-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^latest_version",
+    "vitest": "^latest_version",
+    "@types/jest": "^latest_version"
+  },
+  "types": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solo925/TypeScript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/solo925/TypeScript/issues"
+  },
+  "homepage": "https://github.com/solo925/TypeScript#readme"
+}
