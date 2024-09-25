@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "ESNEXT",
+    "module": "ESNEXT",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -13,5 +13,23 @@
   "include": [
     "**/*.ts",
     "**/*.test.ts"
-  ]
+  ],
+  "dependencies": {
+    "tsc": "^2.0.4"
+  },
+  "name": "typescript",
+  "description": "",
+  "version": "1.0.0",
+  "main": "vitest.config.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solo925/TypeScript.git"
+  },
+  "author": "solo925",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solo925/TypeScript/issues"
+  },
+  "homepage": "https://github.com/solo925/TypeScript#readme"
 }
