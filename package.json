@@ -1,4 +1,11 @@
 {
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vitest.config.js",
+  "scripts": {
+    "test": "vitest"
+  },
   "compilerOptions": {
     "target": "ESNEXT",
     "module": "ESNEXT",
@@ -7,21 +14,14 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "scripts": {
-    "test": "vitest"
-  },
   "include": [
     "**/*.ts",
     "**/*.test.ts"
   ],
   "dependencies": {
+    "jsdom": "^25.0.1",
     "tsc": "^2.0.4"
   },
-  "name": "typescript",
-  "description": "",
-  "version": "1.0.0",
-  "main": "vitest.config.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/solo925/TypeScript.git"

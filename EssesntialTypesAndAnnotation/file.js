@@ -126,3 +126,16 @@ const ArrayOfItems = mapOverItems(["2", "3", "4", "5", "6", "7", "8", "9"], (ite
 });
 console.log(ArrayOfItems);
 console.log();
+const ojTypea = {
+    small: "small",
+    large: "large",
+};
+const logSize = (size) => {
+    console.log(ojTypea[size]);
+};
+logSize("small");
+function logId(id) {
+    console.log(id);
+}
+logId(1234);
+logId("1234");

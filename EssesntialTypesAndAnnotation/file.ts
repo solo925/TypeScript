@@ -199,6 +199,25 @@ console.log(ArrayOfItems);
 
 console.log();
 
+const  ojTypea = {
+  small: "small",
+  large: "large",
+}
+
+
+const logSize = (size: "small" | "large") => {
+  console.log(ojTypea[size]);
+}
+
+logSize("small");
+
+function logId(id: string | number) {
+  console.log(id);
+  
+}
+logId(1234);
+logId("1234");
+
 
 
   
