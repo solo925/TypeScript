@@ -218,9 +218,111 @@ function logId(id: string | number) {
 logId(1234);
 logId("1234");
 
+const getUser = async (id: string):Promise<User> =>{
+  const user =await db.users.get(id);
 
+  return user
+}
 
+type Album1 = {
+  title: string;
+  artist: string;
+  releaseYear: number;
+};
+
+type SalesData = {
+  unitsSold: number;
+  revenue: number;
+};
   
+type AlbumWithSalesData = Album1 & SalesData;
+
+const Wishyouwerehereenterprise: AlbumWithSalesData = {
+  title: "Wish you were here",
+  artist: "enterprise",
+  releaseYear: 2020,
+  unitsSold: 1000,
+  revenue: 1000000,
+};
+console.log(Wishyouwerehereenterprise.title);
+
+// With interFAces
+interface Album2 {
+  title: string;
+  artist: string;
+  releaseYear: number;
+}
+
+interface studioAlbum extends Album2 { 
+  studio: string;
+  producer:string;
+}
+
+interface LiveAlbum extends Album2 { 
+  concertVenue: string;
+  concertDate: Date;
+}
+
+const AmericanBeayty: studioAlbum={
+  title: "Naruto",
+  artist: "Naruto",
+  releaseYear: 2015,
+  studio: "Ufotable",
+  producer: "Sasuke",
+
+}
+
+console.log();
+console.log(AmericanBeayty);
+console.log();
+
+const eminemConcert: LiveAlbum = {
+  title: "Music To Be Mudered",
+  artist: "Eminem",
+  releaseYear: 2020,
+  concertVenue: "Ohio",
+  concertDate: new Date(),
+  
+}
+console.log();
+console.log(eminemConcert);
+console.log();
+
+
+interface BoxSet extends studioAlbum, LiveAlbum {
+  numberOfDiscs: number;
+  }
+
+const boxo: BoxSet = {
+  title: "Demon Slayer",
+  artist: "Zenitsu",
+  releaseYear: 2024,
+  studio: "Ufotable",
+  producer: "Tanjiro",
+  concertDate: new Date(),
+  concertVenue: "Shubuya",
+  numberOfDiscs: 50
+}
+  
+console.log(boxo);
+
+interface Albumawrds{
+  [index:string]:boolean;
+}
+const OneRepublicAwards: Albumawrds = {
+  "nobody from Kaiju no.8": true,
+}
+
+console.log(OneRepublicAwards);
+
+const ALbumAwards: Record<string, boolean> = {
+  "nobody from Kaiju no.8": true,
+}
+ALbumAwards.name = true;
+console.log(ALbumAwards);
+
+
+
 
 
 

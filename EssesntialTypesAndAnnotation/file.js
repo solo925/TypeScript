@@ -1,4 +1,13 @@
 "use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 console.log("Script running...");
 const myMultiply = (value1, value2) => {
@@ -139,3 +148,55 @@ function logId(id) {
 }
 logId(1234);
 logId("1234");
+const getUser = (id) => __awaiter(void 0, void 0, void 0, function* () {
+    const user = yield db.users.get(id);
+    return user;
+});
+const Wishyouwerehereenterprise = {
+    title: "Wish you were here",
+    artist: "enterprise",
+    releaseYear: 2020,
+    unitsSold: 1000,
+    revenue: 1000000,
+};
+console.log(Wishyouwerehereenterprise.title);
+const AmericanBeayty = {
+    title: "Naruto",
+    artist: "Naruto",
+    releaseYear: 2015,
+    studio: "Ufotable",
+    producer: "Sasuke",
+};
+console.log();
+console.log(AmericanBeayty);
+console.log();
+const eminemConcert = {
+    title: "Music To Be Mudered",
+    artist: "Eminem",
+    releaseYear: 2020,
+    concertVenue: "Ohio",
+    concertDate: new Date(),
+};
+console.log();
+console.log(eminemConcert);
+console.log();
+const boxo = {
+    title: "Demon Slayer",
+    artist: "Zenitsu",
+    releaseYear: 2024,
+    studio: "Ufotable",
+    producer: "Tanjiro",
+    concertDate: new Date(),
+    concertVenue: "Shubuya",
+    numberOfDiscs: 50
+};
+console.log(boxo);
+const OneRepublicAwards = {
+    "nobody from Kaiju no.8": true,
+};
+console.log(OneRepublicAwards);
+const ALbumAwards = {
+    "nobody from Kaiju no.8": true,
+};
+ALbumAwards.name = true;
+console.log(ALbumAwards);
