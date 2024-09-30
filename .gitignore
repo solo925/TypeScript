@@ -6,6 +6,9 @@ pnpm-lock.yaml
 package-lock.json
 package.json
 
+# Ignore all JavaScript files
+*.js
+
 # TypeScript
 *.tsbuildinfo
 
@@ -44,13 +47,6 @@ coverage/
 # OS generated files
 .DS_Store
 Thumbs.db
-
-# Ignore all JavaScript and TypeScript files in certain directories (optional)
-# Uncomment the following lines if you want to ignore all JavaScript/TypeScript files in specific directories
-# src/**/*.js
-# src/**/*.ts
-# test/**/*.js
-# test/**/*.ts
 
 # Miscellaneous
 *.tgz
